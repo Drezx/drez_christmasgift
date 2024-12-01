@@ -1,0 +1,52 @@
+
+#gift {
+    height: 30%;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-40%) translateX(-50%);
+    filter: drop-shadow(0 0 5px #fdf471);
+
+
+}
+
+#gift:hover {
+    cursor: pointer;
+}
+
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        filter: drop-shadow(0 0 5px #ffd700);
+        transform: translateY(-40%) translateX(-50%) rotate(-0deg);
+    }
+
+    35% { transform: translateY(-40%) translateX(-50%) rotate(0deg); }
+    45% { transform: translateY(-40%) translateX(-50%) rotate(10deg); }
+    50% { filter: drop-shadow(0 0 15px #ffd700); }
+    55% { transform: translateY(-40%) translateX(-50%) rotate(-10deg); }
+    65% { transform: translateY(-40%) translateX(-50%) rotate(0deg); }
+
+    100% {
+        filter: drop-shadow(0 0 5px #ffd700);
+        transform: translateY(-40%) translateX(-50%) rotate(0deg);
+    }
+}
+
+h3 {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translateY(-40%) translateX(-50%);
+    z-index: 3;
+    font-size: 4vh;
+    font-family: 'Christmas';
+    text-shadow: 0 1px 10px rgba(0,0,0);
+}
+
